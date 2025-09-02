@@ -92,7 +92,6 @@ export default function MenuPage() {
             <img
               src={`${import.meta.env.VITE_API_URL}/menu/${item._id}/image`}
               alt={item.name}
-              onError={(e) => (e.target.src = "/placeholder.png")}
               className="w-full h-40 object-cover rounded-md mb-3"
             />
 
