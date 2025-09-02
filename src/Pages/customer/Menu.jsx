@@ -90,7 +90,7 @@ export default function MenuPage() {
             className="border rounded-lg p-4 shadow-md flex flex-col"
           >
             <img
-              src={`http://localhost:5000/api/menu/${item._id}/image`}
+              src={`${import.meta.env.VITE_API_URL}/menu/${item._id}/image`}
               alt={item.name}
               onError={(e) => (e.target.src = "/placeholder.png")}
               className="w-full h-40 object-cover rounded-md mb-3"
