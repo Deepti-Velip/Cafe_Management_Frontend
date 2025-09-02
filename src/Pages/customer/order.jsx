@@ -8,7 +8,7 @@ import { io } from "socket.io-client";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const socket = io("http://localhost:5000"); // backend URL
+const socket = io("https://thecafe.onrender.com"); // backend URL
 
 const schema = yup.object({
   table_no: yup.string().required("Table number is required"),
