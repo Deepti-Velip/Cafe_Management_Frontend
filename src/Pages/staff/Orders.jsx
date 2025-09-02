@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useAxios from "../../lib/axios";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:5000");
+const socket = io("https://thecafe.onrender.com");
 const OrdersPage = () => {
   const [orders, setOrders] = useState([]);
   const [statusFilter, setStatusFilter] = useState("");
